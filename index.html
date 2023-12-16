@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c7ed1bf01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <section id="weather">
+        <div id="heading">
+          <h1>Weather of Your City</h1>
+        </div>
+        <div class="search">
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" placeholder="   Search City" name="searchInput"  class="input-box">
+                    <button id="searchBtn"><i class="fa fa-search" style="font-size: 18px;" ></i></button>
+                </form>
+            </div>
+        </div>
+      <section id="container">
+          <div class="container-temp">
+            <div class="location-not-found">
+                <h1>Sorry, Location Not Found !!!</h1>
+                <img src="images/404.png" alt="">
+            </div>
+              <div class="flex-item" id="item1">
+                            
+                <div class="weather-body">
+                <div class="heading">
+                    <h2>Weather in <span id="cityName">Delhi</span></h2>
+                </div>
+                <img src="images/cloud.png" alt="Weather Image" class="weather-image">
+                <div class="weather-box">
+                    <h1 class="temperature">0 <sup>°C</sup></h1>
+                    <p class="desc">Light Rain</p>
+                </div>
+                <div class="weather-detail">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>  
+                        <div class="text">
+                            <span id="humidity">45%</span>
+                            <p>Humidity</p>
+                        </div>      
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span id="wind-speed">6.2 km/h</span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sun-detail">
+                    <div class="sunrise">
+                        <img src="sunrise.png" alt="">
+                        <div class="text">
+                            <span id="sun-rise">06:00 AM</span>
+                            <p>(IST)</p>
+                        </div>      
+                    </div>
+                    <div class="sunset">
+                        <img src="sunset.png" alt="">
+                        <div class="text">
+                            <span id="sun-set">6:45 PM</span>
+                            <p>(IST)</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              
+          </div>
+      </section>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

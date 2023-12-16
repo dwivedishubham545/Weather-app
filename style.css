@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+#weather{
+    background-image: url("https://source.unsplash.com//1600x900/?landscape");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.search{
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    padding: 8px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 1px 1px 2px rgb(95, 93, 93), 0 0 25px rgb(165, 165, 167), 0 0 5px rgb(240, 240, 241);
+    
+    
+}
+.search-box input[type=text]{
+    width: 85%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    padding: 12px 16px;
+    background-color: #e6f5fb;
+    border-radius: 5px;
+    border: none;
+}
+     
+.search-box button{
+    width: 10%;
+    height: 46px;
+    background-color: #e6f5fb;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    color: white;
+    background-color: #626566;
+}
+
+#weather #heading{
+    font-family: 'Akronim';
+    text-align: center;
+    font-size: 40px;
+    color: rgb(122, 16, 51); 
+    padding-top: 10px;
+}
+
+#container h2{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(119, 250, 11);
+    font-family: 'Kaushan Script', cursive;
+}
+
+#container .container-temp{
+    display: flex;
+    justify-content: center;
+
+}
+.flex-item{
+    background-color: rgb(253, 251, 251);
+    width: 50%;
+    height: 70vh;
+    margin: 20px;
+    display: none;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 1px 1px 2px rgb(95, 93, 93), 0 0 25px rgb(165, 165, 167), 0 0 5px rgb(240, 240, 241);
+    
+}
+
+#container .flex-item img{
+    width: 20%;
+}
+
+.weather-box{
+    margin-block: 20px;
+}
+
+.weather-box .temperature{
+    font-size: 45px;
+    font-weight: 800;
+    position: relative;
+}
+.weather-box .temperature sup{
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+}
+.weather-box .desc{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.weather-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 20px 0;
+}
+
+.weather-detail .humidity{
+    display: flex;
+    align-items: center;
+}
+.weather-detail .wind{
+    display: flex;
+    align-items: center;
+}
+
+.weather-detail .humidity i{
+    font-size: 35px;
+}
+.weather-detail .wind i{
+    font-size: 35px;
+}
+.weather-detail .text{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.weather-detail .text span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sun-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 20px 20px 20px;
+}
+.sun-detail .sunrise img{
+    font-size: 50px;
+}
+.sun-detail .sunset img{
+    font-size: 50px;
+}
+
+.sun-detail .sunrise {
+    display: flex;
+    align-items: center;
+}
+.sun-detail .sunset{
+    display: flex;
+    align-items: center;
+}
+.sun-detail .text{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.sun-detail .text span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.location-not-found{
+    background-color: rgb(253, 251, 251);
+    width: 50%;
+    height: 70vh;
+    margin: 20px;
+    display: none;
+    border-radius: 10px;
+    /* align-content: center; */
+    text-align: center;
+    box-shadow: 1px 1px 2px rgb(95, 93, 93), 0 0 25px rgb(165, 165, 167), 0 0 5px rgb(240, 240, 241);
+    
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location-not-found h1{
+    font-size: 30px;
+    color: rgb(92, 91, 89);
+    margin-block-end: 15px;
+}
+ .location-not-found img{
+    width: 100px;
+ }
+
+/* Responsive */
+
+@media (max-width:390px) {
+
+    body{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    .search {
+        width: 90%;
+    }
+    .flex-item {
+        width: 100%;
+    }
+    .weather-detail {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sun-detail {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
